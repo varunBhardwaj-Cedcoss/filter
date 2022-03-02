@@ -148,7 +148,7 @@ $(document).ready(function () {
   $("#htm").on("keyup", "#searchInput", function () {
     var value = $(this).val().toLowerCase();
 
-    if (!isNaN(value)) {
+    if (isNaN(value)) {
       $("#myTable tbody tr .pid ").filter(function () {
         $(this)
           .parent()
